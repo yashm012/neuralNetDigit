@@ -33,23 +33,3 @@ def sigmoid(z):
 def sigmoid_prime(z):
     """Derivative of the sigmoid function."""
     return sigmoid(z)*(1-sigmoid(z))
-
-def train_one_iteration(model_inputs, last_cost:float):
-
-      if cost >= last_cost:
-          return False, cost
-      else:
-          model.slope += slope_update
-          model.intercept += intercept_update
-          return True, cost
-
-def training_loop():
-    print("Training beginning...")
-    last_cost = math.inf
-    continue_loop = True
-    while continue_loop:
-        continue_loop, last_cost = train_one_iteration(model_inputs = data[""],
-                                                    expectedNum = data[""],
-                                                    last_cost = last_cost)
-
-    print("Training complete.")
