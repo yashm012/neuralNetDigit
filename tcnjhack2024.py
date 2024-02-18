@@ -34,12 +34,6 @@ def sigmoid_prime(z):
     """Derivative of the sigmoid function."""
     return sigmoid(z)*(1-sigmoid(z))
 
-def cost_function(expectedNum, actualNum):
-    difference = expectedNum - actualNum
-    cost = sum(difference ** 2)
-
-    return difference, cost
-
 def train_one_iteration(model_inputs, last_cost:float):
 
       if cost >= last_cost:
