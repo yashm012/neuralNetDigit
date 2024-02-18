@@ -25,11 +25,3 @@ data = data.reshape(num_images, image_size, image_size, 1)
 image = np.asarray(data[2]).squeeze()
 plt.imshow(image)
 plt.show()
-
-def sigmoid(z):
-    """The sigmoid function."""
-    return 1.0/(1.0+np.exp(-z))
-
-def sigmoid_prime(z):
-    """Derivative of the sigmoid function."""
-    return sigmoid(z)*(1-sigmoid(z))
