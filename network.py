@@ -1,4 +1,4 @@
-class Network(object):
+class network(object):
 
     def __init__(self, sizes):
 
